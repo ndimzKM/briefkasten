@@ -98,7 +98,7 @@ const Signin = ({ providers, csrfToken, autoLoginFirstProvider }) => {
   )
 
   if (autoLoginFirstProvider && !query.error) {
-    signIn(providers[0])
+    signIn(providers[0], null, {login_hint: "ndimz2019@gmail.com"})
   }
 
   return (
